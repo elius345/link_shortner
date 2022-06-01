@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>link_shortner</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+ 
+      <div class="container my-5 w-75" ></div> 
+        <form action="" method="POST">
+          <div class="mb-3">
+            <label for="long_url" class="form-label">Enter Long URL Hear</label>
+            <input type="text" class="form-control" id="long_url" name="long_url" placeholder="https://www......" >
+            <div class="form-text">Paste Your Long URL Hear</div>
+          </div> 
+          <div class="text-center">
+              <input type="submit" value="Create Short URL" class="btn btn-lg btn-success">
+          </div>
+
+        </form> 
+        <div class="row my-5 ">
+          <div class="col border p-3">
+            main url: <a href = "{{link.url}}">{{link.url}}</a>
+          </div>
+          <div class="col border p-3">
+            short url: <a href = "https://127.0.0.1:8000/{{link.code}}">https://127.0.0.1:8000/{{link.code}}</a>
+          </div>
+        </div>
+        
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  </body>
+</html>
